@@ -1,0 +1,12 @@
+[Unit]
+Description=HTTPS-Redirect
+
+[Service]
+Type=simple
+User=
+WorkingDirectory=
+ExecStart=/usr/bin/npm run start
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
